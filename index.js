@@ -1,4 +1,22 @@
 module.exports = {
+
+  getCard: function() {
+    var argCount = arguments.length;
+
+    if(0 === argCount) {
+      return getCard(faces.any, suits.any);
+    }
+
+    if(1 === argCount) {
+
+    }
+
+    if(2 <= argCount) {
+
+    }
+
+  },
+  
   faces: {
     not: 0,
     ace: 1,
@@ -32,22 +50,5 @@ module.exports = {
   },
 
   shortsuits: '!cdhs&%>',
-
-  getCard: function() {
-    var argCount = arguments.length;
-
-    if(0 === argCount) {
-      return getCard(faces.any, suits.any);
-    }
-
-    if(1 === argCount) {
-
-    }
-
-    if(2 <= argCount) {
-
-    }
-
-  }
   
 };
