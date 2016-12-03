@@ -11,3 +11,11 @@ describe('#face', function() {
   });
 
 });
+
+describe('#getCard', function() {
+  it('gets an unknown card when no args are passed', function() {
+    var card = poker.getCard();
+    card.face.should.equal(poker.faces.any);
+    card.suit.should.equal(poker.suits.any);
+  });
+});
