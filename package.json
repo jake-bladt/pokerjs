@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/jake-bladt/pokerjs/issues"
   },
-  "homepage": "https://github.com/jake-bladt/pokerjs#readme"
+  "homepage": "https://github.com/jake-bladt/pokerjs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
