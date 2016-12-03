@@ -6,4 +6,8 @@ describe('#face', function() {
     poker.faces.deuce.should.equal(poker.faces.two);
   });
 
+  it('equates trey and three', function() {
+    poker.faces.trey.should.equal(poker.faces.three);
+  });
+
 });
