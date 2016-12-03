@@ -1,6 +1,6 @@
 module.exports = {
   faces: {
-    not: 0
+    not: 0,
     ace: 1,
     deuce: 2, two: 2,
     trey: 3, three: 3,
@@ -45,7 +45,7 @@ module.exports = {
     }
 
     if(2 <= argCount) {
-      
+
     }
 
   }
