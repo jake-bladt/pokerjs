@@ -2,7 +2,9 @@ module.exports = {
 
   getCard: function() {
     var argCount = arguments.length;
-    return argCount;
+    if(0 == argCount) {
+      return this.getCard(this.faces.any, this.suits.any);
+    }
   },
 
   faces: {
@@ -37,6 +39,6 @@ module.exports = {
     morethan: 7
   },
 
-  shortsuits: '!cdhs&%>',
+  shortsuits: '!cdhs&%>'
   
 };
