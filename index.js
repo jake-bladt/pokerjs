@@ -1,9 +1,9 @@
-module.exports = {
+const card = {
 
   getCard: (...args) => {
     var argCount = args.length;
     if(0 === argCount) {
-      return this.getCard(this.faces.any, this.suits.any);
+      return  card.getCard(card.faces.any, card.suits.any);
     }
     if(1 === argCount) {
       return { face: args[0].face, suit: args[0].suit }
@@ -48,3 +48,5 @@ module.exports = {
   shortsuits: '!cdhs&%>'
   
 };
+
+module.exports = card;
