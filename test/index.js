@@ -1,4 +1,4 @@
-var should = require('chai').should(),
+var should = require('chai').should,
   poker = require('../index');
 
 describe('#face', function() {
