@@ -1,9 +1,12 @@
 module.exports = {
 
-  getCard: function() {
-    var argCount = arguments.length;
+  getCard: (...args) => {
+    var argCount = args.length;
     if(0 == argCount) {
       return this.getCard(this.faces.any, this.suits.any);
+    }
+    if(1 == argCount) {
+      
     }
   },
 
