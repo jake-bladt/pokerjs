@@ -2,11 +2,14 @@ module.exports = {
 
   getCard: (...args) => {
     var argCount = args.length;
-    if(0 == argCount) {
+    if(0 === argCount) {
       return this.getCard(this.faces.any, this.suits.any);
     }
-    if(1 == argCount) {
-      
+    if(1 === argCount) {
+      return { face: args[0].face, suit: args[0].suit }
+    }
+    if(2 >= argCount) {
+      return { face: args[0], suit: args[1] }
     }
   },
 
